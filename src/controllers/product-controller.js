@@ -69,8 +69,8 @@ exports.post = async(req, res, next) => {
    try{
        // Cria o Blob Service
 
-       const blobSvc = azure.createBlobService(config.containnerConnectionString);
-       let filename = guid.raw().toString() + '.jpg';
+    //    const blobSvc = azure.createBlobService(config.containnerConnectionString);
+    //    let filename = guid.raw().toString() + '.jpg';
        let rawdata = req.body.image;
        let matches = rawdata.match(/^data:([A-Za-z-+\/]+); base64, (.+)$/);
        let type = matches[1];
